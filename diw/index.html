@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Filmes</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="row">
+        <div class="container col-11 justify-content-between d-inline-flex">
+            
+            <div class="logo" class="d-inline-flex justify-content-between">
+                <div class="logo-img col-6">
+                    
+                 
+                </div>
+                <div class="col-6">
+                    <a class="logo-link" href="/"><h1 class="title">PucFlix</h1></a>
+                 </div>
+            </div>
+            
+            <div class="burguer col-1">
+              <img src="/img/burguer.png" alt="">
+            </div>
+
+            <nav class="nav-bar ">
+              
+              <div class="collapse" id="navbarToggleExternalContent lg-nav">
+ 
+
+              </div>
+                    <ul class="nav text-start">
+                        <li class="nav-item"><a class="nav-link" href="#populares">Populares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nowPlaying">Em cartaz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        
+                        <li class="search nav-item">
+                            <div class="input-group align-items-center">
+                                <div>
+                                    <button id="search-btn" type="submit" class="btn"></button>
+                                </div>
+                                <div class="form-outline">
+                                    <input  placeholder="Buscar Filme" id="searchbar-inpt" type="search" class="search-bar form-control"></input>
+                                </div>
+                        
+                            </div>
+                            
+                            
+                        </li>
+                    </ul>
+                </nav> 
+            </div.logo>
+        </div>
+    </header>
+    <div class="menuBurguer shadow-3 p-4">
+    <ul id="menuBurguerUl">
+      <li class="nav-item"><a class="nav-link" href="#populares">Populares</a></li>
+      <li class="nav-item"><a class="nav-link" href="#nowPlaying">Em cartaz</a></li>
+      <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+      <li class="search nav-item">
+        <div class="input-group align-items-center d-inline-flex justify-content-center ">
+            <div class="">
+                <input id="searchbar-inpt2" placeholder="Buscar Filme"  type="search" class="form-control"></input>
+            </div>
+    
+        </div>
+        
+        
+    </li>
+    </ul>
+    </div>
+    <main class="col-12">
+        <section  id="populares">
+                    <div id="carouselPopulares" class="carousel slide"data-ride="false" >
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">  
+                            <div id="carouselItem1" class="carousel-item active popularMovie">
+                                <div class="carousel-content d-inline-flex col-12 ">
+                                    <div class="vazio col-1"></div>
+                                    <div class="movie-text col-4 ">
+                             
+                                        <h1 class="movie-title">Titulo 1</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Critica: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
+                                        <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
+                                        <div class="popBtn">
+                                          <a id="popBtn0" href="#" class="btn btn-dark">Visitar a página</a>
+                                        </div>
+                                      </div>
+                                 
+                                </div>
+                            </div>
+                            <div id="carouselItem2" class="carousel-item  popularMovie">
+                                <div class="carousel-content d-inline-flex col-12 ">
+                                    <div class="vazio col-1"></div>
+                                    <div class="movie-text col-lg-4 ">
+                                        <h1 class="movie-title">Titulo 2</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
+                                        <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
+                                        <div class="popBtn">
+                                          <a id="popBtn1" href="#" class="btn btn-dark">Visitar a página</a>
+                                        </div>
+                                      </div>
+                              
+                                </div>
+                            </div>
+                            <div id="carouselItem3" class="carousel-item  popularMovie">
+                                <div class="carousel-content d-inline-flex col-12 ">
+                                    <div class="vazio col-1"></div>
+                                    <div class="movie-text col-4 ">
+                                        <h1 class="movie-title">Titulo 3</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme">0.0</p>
+                                        </div>
+                                        <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
+                                        <div class="popBtn">
+                                          <a id="popBtn2" href="#" class="btn btn-dark">Visitar a página</a>
+                                        </div>
+                                      </div>
+                                   
+                                </div>
+                            </div>
+                            <div id="carouselItem4" class="carousel-item  popularMovie">
+                                <div class="carousel-content d-inline-flex col-12 ">
+                                    <div class="vazio col-1"></div>
+                                    <div class="movie-text col-4 ">
+                                        <h1 class="movie-title">Titulo 4</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
+                                        <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
+                                        <div class="popBtn">
+                                          <a id="popBtn3" href="#" class="btn btn-dark">Visitar a página</a>
+                                        </div>
+                                      </div>
+                               
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+        </section>
+
+        <section id="nowPlaying" class="col-12">
+            <div class="container">
+                <div class="sectionHeader row">
+                    <h2 class="">Em cartaz...</h2>
+                </div>
+                <div class="">
+                <div id="multi-item" class="">
+      
+                    <div class="col-12">
+                        <div class="wppr">
+                    
+                          <div class=" col-xl-3 col-md-5 col-9" >
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                  src="" alt="Card image cap">
+                                <div class="card-body">
+                                  <h4 class="card-title">Card title</h4>
+                                  <div class="tagDiv col-8
+                                   d-inline-flex justify-content-center">
+
+                                  </div>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a href="#" class="btn btn-dark saiba-mais">Saiba mais +</a>
+                                </div>
+                              </div>
+                          </div>
+                    
+                          <div class=" col-xl-3 col-md-5 col-9" >
+                            <div class="card mb-2">
+                              <img class="card-img-top"
+                                src="" alt="Card image cap">
+                              <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <div class="tagDiv col-12 d-inline-flex justify-content-center">
+
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                  card's content.</p>
+                                <a href="#" target="_blank" class="btn btn-dark saiba-mais">Saiba mais +</a>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class=" col-xl-3 col-md-5 col-9" >
+                            <div class="card mb-2">
+                              <img class="card-img-top"
+                                src="" alt="Card image cap">
+                              <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <div class="tagDiv col-12 d-inline-flex justify-content-center">
+
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                  card's content.</p>
+                                <a href="#"class="btn btn-dark saiba-mais">Saiba mais +</a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class=" col-xl-3 col-md-5 col-9" >
+                          <div class="card mb-2">
+                              <img class="card-img-top"
+                                src="" alt="Card image cap">
+                              <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <div class="tagDiv col-12 d-inline-flex justify-content-center">
+
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                  card's content.</p>                                     
+                                <a href="#" class="btn btn-dark saiba-mais">Saiba mais +</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </section>
+
+
+    </main>
+
+    <footer id="sobre">
+
+      <div class="container">
+        <div class="row">
+          <div id="sobreText" class="col-lg-5">
+            <h4 class="footerHeader">Sobre: </h4>
+            <h6 class="footerText">Trabalho da Materia DIW da PUC Minas.</h6>
+            <div class="contato footerHeader ">
+              <h4 class="footerHeader">Editorial: </h4>
+              <li> Criação: Julio Baltazar </li>
+              <li> Pesquisa: Julio Baltazar</li>
+
+
+              
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        <div class="col-lg-4">  
+        <ul>  
+          </ul>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+</script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="java.js"></script>
+   <script src="filmespopulares.js"></script>
+   <script src="nocinema.js"></script>
+   
+</body>
+</html>
